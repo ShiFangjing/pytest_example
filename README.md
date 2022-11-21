@@ -10,4 +10,5 @@ fixture的作用范围示例：
 
 谨记：fixture是在测试首次请求时创建的，并基于它们的作用域被销毁。（Fixtures are created when first requested by a test, and are destroyed based on their scope。）
 所以被fixture修饰的函数并不会主动被执行，会在调用的时候被第一次执行，scope控制的只是fixture的销毁时间。
+
 建议：用参数化方式使用fixture
